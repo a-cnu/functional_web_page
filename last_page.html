@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeFinder</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+        
+    <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+      </video>
+      
+    
+
+    <div class="form">
+        <h1 class="heading">Take us through your dream education</h1>
+        <h1 class="heading-2">Step 1 of 3</h1>
+        <h3 class="title1">What degree do you plan to Study?</h3>
+        <div class="wrapper">
+            <input type="radio" name="opt" id="option-1" value="toefl" >
+            <input type="radio" name="opt" id="option-2" value="ielts">
+            <input type="radio" name="opt" id="option-3" value="pte">
+              <label for="option-1" class="option option-1">
+                <div class="dot"></div>
+                 <span>TOEFL</span>
+                 </label>
+              <label for="option-2" class="option option-2">
+                <div class="dot"></div>
+                 <span>IELTS</span>
+              </label>
+              <label for="option-3" class="option option-3">
+                <div class="dot"></div>
+                 <span>PTE</span>
+              </label>
+           </div>
+    
+        <h3 class="title1">Overall Score Obtained</h3>
+        <input type="number" id="input" autocomplete="off" class="school_name" min="0" max="120" required>
+</div>
+    
+
+</div>
+<div class="buttons">
+    <a href="#" onclick="finder()" class="anchor">
+    <button class="submit-btn" data-inline="True">Submit</button>
+    </a>
+    <button class="submit-btn" data-inline="True">Back</button>
+</div>
+
+<div class="result" id="result"></div>
+<script src="app.js"></script>
+</body>
+</html>

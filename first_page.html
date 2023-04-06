@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeFinder</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+        
+    <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+      </video>
+      
+    
+
+    <div class="form">
+        <h1 class="heading">Take us through your dream education</h1>
+        <h1 class="heading-2">Step 1 of 3</h1>
+        <h3 class="title1">What degree do you plan to Study?</h3>
+        <div class="wrapper">
+            <input type="radio" name="options" id="option-1" value="bachelor" >
+            <input type="radio" name="options" id="option-2" value="master">
+              <label for="option-1" class="option option-1">
+                <div class="dot"></div>
+                 <span>Bachelor's</span>
+                 </label>
+              <label for="option-2" class="option option-2">
+                <div class="dot"></div>
+                 <span>Master's</span>
+              </label>
+           </div>
+        <div class="selectdiv">
+            <h3 class="title">Where do you want to Study?</h3>
+    <label>
+      <select class="select">
+          <option selected> Select Box </option>
+          <option value="usa">United States of America</option>
+          <option value="canada">Canada</option>
+          <option value="aus">Australia & New Zealand</option>
+          <option value="uk">United Kingdom</option>
+          <option value="eu">European Union</option>
+      </select>
+  </label>
+  </div>
+  <div class="selectdiv">
+    <h3 class="title">What are you planning to Study?</h3>
+  <label>
+    <select class="select">
+        <option selected> Select Box </option>
+        <option  value="cs">Computer Science</option>
+        <option  value="dsbi">Data Science and Business Intelligence</option>
+        <option  value="me">Mechanical Engineering</option>
+        <option  value="mis">Management Information Systems</option>
+        <option  value="mba">MBA</option>
+        <optio   value="cybersecurity">Cybersecurity</option>
+        <option  value="ai">Artificial Intelligence</option>
+    </select>
+</label>
+</div>
+      <a href="#" class="anchor" onclick="dynamic()" id="next">
+        <button class="submit-btn" data-inline="True" >Next</button>
+      </a>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
